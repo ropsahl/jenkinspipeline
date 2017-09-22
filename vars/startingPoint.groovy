@@ -1,3 +1,7 @@
+import no.runar.Config
 void call(){
-    echo "---- Started ----"
+    echo "---- Startingpoint reached ----"
+
+    echo Config.create().text
+
 }
