@@ -17,7 +17,7 @@ void call(){
         }
     },two: {
         stage("Stage two"){
-            config3=r=Config.create("Two")
+            config2=r=Config.create("Two")
             echo config2.text
 
         }
