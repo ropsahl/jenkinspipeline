@@ -12,18 +12,21 @@ void call(){
     parallel one: {
         stage("Stage one"){
             config1=r=Config.create("One")
+            echo "One Complete"
             echo config1.text
 
         }
     },two: {
         stage("Stage two"){
             config2=r=Config.create("Two")
+            echo "Two Complete"
             echo config2.text
 
         }
     },three: {
         stage("Stage three"){
             config3=r=Config.create("Three")
+            echo "Three Complete"
             echo config3.text
 
         }
