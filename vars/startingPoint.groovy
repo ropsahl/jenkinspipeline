@@ -1,8 +1,12 @@
 import no.runar.Config
+import no.runar.ConfigHolder
+
 void call(){
     echo "---- Startingpoint reached ----"
 
     Config.steps=steps
-    echo Config.create().text
-
+    ConfigHolder configHolder=Config.create()
+    node(){
+        echo configHolder.text
+    }
 }

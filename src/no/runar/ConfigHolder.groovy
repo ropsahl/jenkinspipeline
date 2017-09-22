@@ -5,7 +5,7 @@ package no.runar
  *
  */
 class ConfigHolder  implements Serializable {
-    String text
+    final String text
     ConfigHolder() {
         text= " Config holder is initialized"
     }
