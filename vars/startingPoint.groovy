@@ -9,7 +9,7 @@ void call(){
     ConfigHolder config3
 
     Config.steps=steps
-    paralell one: {
+    parallel one: {
         stage("Stage one"){
             config1=r=Config.create("One")
         }
