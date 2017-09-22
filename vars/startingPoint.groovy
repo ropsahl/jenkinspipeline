@@ -13,22 +13,23 @@ void call(){
         stage("Stage one"){
             config1=Config.create("One")
             echo "One Complete"
-            echo config1.text
 
         }
     },two: {
         stage("Stage two"){
             config2=Config.create("Two")
             echo "Two Complete"
-            echo config2.text
 
         }
     },three: {
         stage("Stage three"){
             config3=Config.create("Three")
             echo "Three Complete"
-            echo config3.text
-
         }
+    }
+    node(){
+        echo config1.text
+        echo config2.text
+        echo config3.text
     }
 }
